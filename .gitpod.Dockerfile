@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN touch /var/log/xdebug.log
+RUN sudo touch /var/log/xdebug.log
 
 RUN sudo apt-get update -q \
     && sudo apt-get install -y php-dev
