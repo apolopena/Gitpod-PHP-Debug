@@ -6,6 +6,9 @@ ports:
     onOpen: open-preview
   - port: 9009
     onOpen: ignore
+    
+tasks:
+  - command: php -S localhost:8080 -t public/
 
 vscode:
   extensions:
